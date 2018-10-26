@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import classNames from 'classnames/bind';
 import SlidePanel from 'terra-slide-panel';
 import SearchField from 'terra-search-field';
+import Image from 'terra-image';
 import SelectableList from 'terra-list/lib/SelectableList';
 import * as api from './api';
 import styles from './GameSearch.scss';
@@ -28,10 +29,18 @@ export default class App extends Component {
     let panelContent;
     if (selectedGame) {
       panelContent = (
-        <div>{selectedGame.name}</div>
+        <>
+          <h3>{selectedGame.name}</h3>
+          <Image src={selectedGame.box.large} />
+          <p className={cx('popularity')}>
+            {selectedGame.popularity.toLocaleString()}
+            {' '}
+            viewers
+          </p>
+        </>
       );
     } else {
-      panelContent = <p className={cx('center')}>No game selected!</p>;
+      panelContent = <p>No game selected!</p>;
     }
 
     const listItems = this.state.gameResults.map(game => (
@@ -57,7 +66,7 @@ export default class App extends Component {
 
     return (
       <SlidePanel
-        panelContent={panelContent}
+        panelContent={<div className={cx('panel')}>{panelContent}</div>}
         mainContent={mainContent}
         isOpen
         fill

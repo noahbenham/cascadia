@@ -12299,6 +12299,15 @@ terra-icon@^2.0.1, terra-icon@^2.26.0, terra-icon@^2.9.0:
     prop-types "^15.5.8"
     terra-doc-template "^1.19.0"
 
+terra-image@^2.26.0:
+  version "2.26.0"
+  resolved "https://registry.npmjs.org/terra-image/-/terra-image-2.26.0.tgz#335cc0385c520b3a97a24d42afdd5c3078f28073"
+  integrity sha512-r9e2zfDJq1LR+MkINxndTMDkM+iJGOMKzmGfo4GyxiTIBqAw5wI/0vkuu4i2aKl2pmiF/enBXZ9yLeU1KgrnnA==
+  dependencies:
+    classnames "^2.2.5"
+    prop-types "^15.5.8"
+    terra-doc-template "^1.19.0"
+
 terra-list@^2.28.0:
   version "2.28.0"
   resolved "https://registry.npmjs.org/terra-list/-/terra-list-2.28.0.tgz#397561cc37c1001f58398c04b5f57293e74bac53"
