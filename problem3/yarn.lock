@@ -12198,6 +12198,27 @@ terra-button@^2.28.0:
     terra-doc-template "^1.19.0"
     terra-icon "^2.26.0"
 
+terra-clinical-item-display@^2.14.0:
+  version "2.14.0"
+  resolved "https://registry.npmjs.org/terra-clinical-item-display/-/terra-clinical-item-display-2.14.0.tgz#b52bea608f4fe8e64ca13b8201566ae5d108136b"
+  integrity sha512-gbL5MPcX7l7mcT9U0Y7QrglxAHOTOQHIxXuuASH/RLHfjKazFsghX7R/r8QYG8LfW/+fnGkhOjowX9JdjMhwyw==
+  dependencies:
+    classnames "^2.2.5"
+    prop-types "^15.5.8"
+    terra-doc-template "^1.2.0"
+    terra-icon "^2.9.0"
+
+terra-clinical-item-view@^2.6.0:
+  version "2.15.0"
+  resolved "https://registry.npmjs.org/terra-clinical-item-view/-/terra-clinical-item-view-2.15.0.tgz#5b4929e7f69a97c3820e31785c2da3f73bd3d3d6"
+  integrity sha512-UtUiL+uiwADYITDpKvGm1stc0mjcOLLmi/fUMcbF79RzvgNWd4JSD2xC3uGsTqQcKFYUkST4Qdo40X9Qi2dzEQ==
+  dependencies:
+    classnames "^2.2.5"
+    prop-types "^15.5.8"
+    terra-clinical-item-display "^2.14.0"
+    terra-doc-template "^1.2.0"
+    terra-icon "^2.0.1"
+
 terra-content-container@^2.27.0:
   version "2.27.0"
   resolved "https://registry.npmjs.org/terra-content-container/-/terra-content-container-2.27.0.tgz#4af8a054988db429b2122cbe88aceece59e0ebaf"
@@ -12209,7 +12230,7 @@ terra-content-container@^2.27.0:
     terra-heading "^2.26.0"
     terra-scroll "^1.13.0"
 
-terra-doc-template@^1.1.0, terra-doc-template@^1.19.0:
+terra-doc-template@^1.1.0, terra-doc-template@^1.19.0, terra-doc-template@^1.2.0:
   version "1.19.0"
   resolved "https://registry.npmjs.org/terra-doc-template/-/terra-doc-template-1.19.0.tgz#55cbce9b291ef26638ce4c3f97f701044ad817b5"
   integrity sha512-I4YdoTSUl8g+ki0eYhWBsmAzjbeEZquPSpD6yaHKRHsHyhDarB57QO0ZT7rl3PZ43msUXQhv7r2agCBkK/M4ZA==
@@ -12269,7 +12290,7 @@ terra-i18n@^2.26.0:
     react-intl "^2.4.0"
     terra-doc-template "^1.19.0"
 
-terra-icon@^2.26.0:
+terra-icon@^2.0.1, terra-icon@^2.26.0, terra-icon@^2.9.0:
   version "2.26.0"
   resolved "https://registry.npmjs.org/terra-icon/-/terra-icon-2.26.0.tgz#40a42186b4c2e7513a6c4b41695acf3d5c871efb"
   integrity sha512-oAEI0B4see8MFrg6VG8OllDUTiu/5K8lrr0Z6ojHLL57AIMh4df7hoIn2LyMSk/B7XHF0mJr4r7DSeQNv241Qw==
@@ -12277,6 +12298,18 @@ terra-icon@^2.26.0:
     classnames "^2.2.5"
     prop-types "^15.5.8"
     terra-doc-template "^1.19.0"
+
+terra-list@^2.28.0:
+  version "2.28.0"
+  resolved "https://registry.npmjs.org/terra-list/-/terra-list-2.28.0.tgz#397561cc37c1001f58398c04b5f57293e74bac53"
+  integrity sha512-0G+KB5J7xCcS72+YmklBN6szAnz8pmU+wU0LrFrONBP6kact9B+ZGhffKYJdDP4zpANcJo0NnDy5MrQqYLkZTw==
+  dependencies:
+    classnames "^2.2.5"
+    prop-types "^15.5.8"
+    terra-arrange "^2.28.0"
+    terra-clinical-item-view "^2.6.0"
+    terra-doc-template "^1.19.0"
+    terra-icon "^2.26.0"
 
 terra-markdown@^2.15.0:
   version "2.15.0"
