@@ -12,7 +12,11 @@
     "react-scripts": "2.0.5",
     "terra-base": "^3.27.0",
     "terra-content-container": "^2.27.0",
-    "terra-slide-panel": "^2.20.0",
+    "terra-search-field": "^2.33.0",
+    "terra-slide-panel": "^2.20.0"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb": "^17.1.0",
     "terra-toolkit": "^4.15.0"
   },
   "scripts": {
