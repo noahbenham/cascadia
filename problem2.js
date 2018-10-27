@@ -2,7 +2,7 @@ const single = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', '
 const teens = ['ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen'];
 const tennums = ['twenty', 'thirty', 'forty', 'fifty', 'sixty', 'seventy', 'eighty', 'ninety'];
 
-function recursiveText(input) {
+function recursiveDollars(input) {
   const millions = Math.floor(input / 1000000);
   let toSubtract = millions * 1000000;
 
@@ -19,13 +19,13 @@ function recursiveText(input) {
 
   let strToReturn = '';
   if (millions) {
-    strToReturn += `${recursiveText(millions)} million`;
+    strToReturn += `${recursiveDollars(millions)} million`;
   }
   if (thousands) {
-    strToReturn += `${recursiveText(thousands)} thousand`;
+    strToReturn += `${recursiveDollars(thousands)} thousand`;
   }
   if (hundreds) {
-    strToReturn += `${recursiveText(hundreds)} hundred`;
+    strToReturn += `${recursiveDollars(hundreds)} hundred`;
   }
 
   if (tens === 1) {
@@ -51,18 +51,18 @@ function toTextDollars(input) {
   }
 
   if (input === 0) {
-    return single[input];
+    return single[input]; // Simply 'zero'
   }
 
-  const dollars = recursiveText(input);
+  let strToReturn = recursiveDollars(input);
 
-  let strToReturn = '';
-  if (dollars) strToReturn += dollars;
+  const decimal = (input - Math.floor(input)).toFixed(2);
+  if (decimal > 0) strToReturn += ` and ${decimal.split('.')[1]}/100`;
 
-  const decimalString = `${(input - Math.floor(input)).toFixed(2)}/100`.split('.')[1];
-  if (decimalString) strToReturn += ` and ${decimalString}`;
-
-  return strToReturn.replace(/\s+/g, ' ').trim();
+  // Remove excess whitespace
+  strToReturn = strToReturn.replace(/\s+/g, ' ').trim();
+  // Capitalize first letter
+  return strToReturn.charAt(0).toUpperCase() + strToReturn.slice(1);
 }
 
 const inputs = [
