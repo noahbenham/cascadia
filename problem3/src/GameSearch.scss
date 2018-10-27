@@ -2,16 +2,28 @@
     .container {
         margin: 25px;
     }
+
+    .panel-content {
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        background-color: lightgray;
+    }
     
-    .center {
+    .search-field {
         text-align: center;
+        margin-bottom: 15px;
     }
 
-    .panel {
+    .align-center {
         text-align: center;
     }
 
     .popularity {
         font-weight: bold;
+    }
+
+    .game-row {
+        padding-left: 5px;
     }
 }
